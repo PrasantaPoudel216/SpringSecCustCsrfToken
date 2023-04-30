@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymleaf.com">
+<head>
+<meta charset="ISO-8859-1">
+<title>Home page for test</title>
+</head>
+<body>
+
+<form action="/savedata" method="post">
+
+<label for="username">username</label>
+
+<input type="hidden" th:name="${_falame.parameterName}" th:value="${_falame.token}" placeholder="${_falame.headerName}"/>
+
+<label value="${_falame}"></label>
+<input type="text" name="username" id="username"><br>
+<input type="submit" value="submit">
+
+
+
+</form>
+
+</h1>
+
+
+</body>
+</html>
